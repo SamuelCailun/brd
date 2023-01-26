@@ -1,0 +1,19 @@
+<style>
+    #filtro{padding: 0 20px; text-align: left; transition: .3s all ease-in-out; margin: 0; display: flex; align-items: center; justify-content: space-between; width: 266px; height: 50px; font-family: open sans; font-weight: bold; font-size: 18px; background-color: #3e3e3e; color: #d9d9d9; border: none;}
+    #filtro:hover{background-color: #505152;}
+    #filtro::after{content: url(..//BI/seta.svg); width: 10px}
+    .container{display: none;}
+    .containerOpened{background-color: white; width: 266px; margin: 0;}
+    .containerOpened a{text-decoration: none; font-family: open sans; font-weight: bold; font-size: 16px; text-align: center; display: block; padding: 15px 0; color: #3e3e3e;} 
+</style>
+<button id="filtro">Campanhas</button>
+<div class="container containerOpened">
+    <a href="https://datastudio.google.com/reporting/5ce0a37b-03f6-4783-a475-eff83de4ef55/page/p_q1lkydds2c">Renove&Ganhe</a>
+</div>
+<script>
+    var button = document.getElementById("filtro");
+    var div = document.querySelector(".containerOpened");
+    button.addEventListener("click", function(){
+        div.classList.toggle("container");
+    })
+</script>
